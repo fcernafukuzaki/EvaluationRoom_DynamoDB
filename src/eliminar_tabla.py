@@ -4,6 +4,7 @@ from dynamodb.candidato_respuesta.eliminar_tabla import eliminar_tabla_candidato
 from dynamodb.testpsicologico_instrucciones.eliminar_tabla import eliminar_tabla_testpsicologico_instrucciones
 from dynamodb.mensaje_procesoseleccion_candidato.eliminar_tabla import eliminar_tabla_mensaje_procesoseleccion_candidato
 from dynamodb.candidato_resultado.eliminar_tabla import eliminar_tabla_candidato_resultado
+from dynamodb.candidato_apreciacion.eliminar_tabla import eliminar_tabla_candidato_apreciacion
 
 if __name__ == '__main__':
 
@@ -22,4 +23,7 @@ if __name__ == '__main__':
     print("Tabla eliminada.")
 
     eliminar_tabla_candidato_resultado(dynamodb)
+    print("Tabla eliminada.")
+
+    eliminar_tabla_candidato_apreciacion(dynamodb)
     print("Tabla eliminada.")

@@ -4,6 +4,7 @@ from dynamodb.candidato_respuesta.crear_tabla import crear_tabla_candidato_respu
 from dynamodb.testpsicologico_instrucciones.crear_tabla import crear_tabla_testpsicologico_instrucciones
 from dynamodb.mensaje_procesoseleccion_candidato.crear_tabla import crear_tabla_mensaje_procesoseleccion_candidato
 from dynamodb.candidato_resultado.crear_tabla import crear_tabla_candidato_resultado
+from dynamodb.candidato_apreciacion.crear_tabla import crear_tabla_candidato_apreciacion
 
 if __name__ == '__main__':
 
@@ -23,3 +24,6 @@ if __name__ == '__main__':
 
     tabla_candidato_resultado = crear_tabla_candidato_resultado(dynamodb)
     print("Estatus de la tabla:", tabla_candidato_resultado.table_status)
+
+    tabla_candidato_apreciacion = crear_tabla_candidato_apreciacion(dynamodb)
+    print("Estatus de la tabla:", tabla_candidato_apreciacion.table_status)
