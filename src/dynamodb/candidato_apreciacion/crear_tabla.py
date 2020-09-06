@@ -12,7 +12,7 @@ def crear_tabla_candidato_apreciacion(dynamodb):
                 'KeyType': 'HASH'  # Partition key
             },
             {
-                'AttributeName': 'idtestpsicologico_idparte_idpregunta',
+                'AttributeName': 'idcliente_idpuestolaboral',
                 'KeyType': 'RANGE'  # Sort key
             }
         ],
@@ -22,7 +22,7 @@ def crear_tabla_candidato_apreciacion(dynamodb):
                 'AttributeType': 'N'
             },
             {
-                'AttributeName': 'idtestpsicologico_idparte_idpregunta',
+                'AttributeName': 'idcliente_idpuestolaboral',
                 'AttributeType': 'S'
             }
         ],
